@@ -11,10 +11,21 @@
 |
 */
 
-// Route::get('/', 'WelcomeController@index');
-    Route::get('/', 'PagesController@home');
+/**
+ * The Home Page
+ */
 
-// Route::get('home', 'HomeController@index');
+Route::get('/', 'PagesController@home');
+
+/**
+ * Notices
+*/
+
+Route::resource('notices', 'NoticesController');
+
+/**
+ * Authentication
+ */
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
