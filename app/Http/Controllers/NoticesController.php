@@ -35,15 +35,13 @@ class NoticesController extends Controller {
 
 	public function create()
 	{
-		// get list of providers
+		$providers = Provider::lists('name', 'id');
 
-		//load a view to create a new notice
-
-		return view('notices.create');
+		return view('notices.create', compact('providers'));
 	}
 
 	public function confirm(Requests\PrepareNoticeRequest $request)
 	{
-		//
+		return $request->all();
 	}
 }
