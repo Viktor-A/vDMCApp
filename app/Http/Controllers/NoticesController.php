@@ -41,4 +41,9 @@ class NoticesController extends Controller {
 
 		return view('notices.create');
 	}
+
+	public function confirm(Requests\PrepareNoticeRequest $request)
+	{
+
+	}
 }
