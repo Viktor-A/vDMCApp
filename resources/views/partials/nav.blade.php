@@ -15,7 +15,6 @@
 					<li><a href="/notices">Home</a></li>
 					<li><a href="/notices/create">New Notice</a></li>
 				</ul>
-
 				<ul class="nav navbar-nav navbar-right">
 					@if (Auth::guest())
 						<li><a href="/auth/login">Login</a></li>
