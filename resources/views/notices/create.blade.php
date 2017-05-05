@@ -34,5 +34,7 @@
 			{!! Form::submit('Preview Notice', ['class' => 'btn btn-primary form-control']) !!}
 		</div>
 		
-	{!! Form::close() !!}	
+	{!! Form::close() !!}
+
+	@include('errors.list')
 @endsection

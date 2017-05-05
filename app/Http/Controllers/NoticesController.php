@@ -44,6 +44,6 @@ class NoticesController extends Controller {
 
 	public function confirm(Requests\PrepareNoticeRequest $request)
 	{
-
+		//
 	}
 }
